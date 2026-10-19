@@ -3,7 +3,7 @@ title: 'Copilot Configuration Basics'
 description: 'Learn how to configure GitHub Copilot at user, workspace, and repository levels to optimize your AI-assisted development experience.'
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-09-22
+lastUpdated: 2026-10-19
 estimatedReadingTime: '10 minutes'
 tags:
   - configuration
@@ -804,6 +804,13 @@ copilot --plan          # start in plan mode (propose without executing)
 
 This is useful in scripts or CI pipelines where you want the CLI to immediately begin working in a specific mode without an interactive prompt.
 
+**Telemetry and folder trust**: Pass `--disable-client-telemetry` to turn off client telemetry uploads from the CLI. For one-off prompt-mode sessions (`-p` or piped stdin), pass `--trust-folder` to trust the working directory without an interactive prompt:
+
+```bash
+copilot --trust-folder -p "Summarize the open TODOs in this repo"
+copilot --disable-client-telemetry
+```
+
 **Plan-then-implement**: Combine `--plan` with `--mode autopilot` to have the agent draft a plan first and then implement it without waiting for approval, instead of pausing after the plan for manual confirmation:
 
 ```bash
@@ -835,7 +842,7 @@ These flags apply only to the current invocation — your persisted sandbox pref
 
 **`worktreeBaseRef` setting**: Controls whether `/worktree`, `/worktree new`, and the `--worktree` startup flag create the new worktree from `HEAD` or from the remote default branch. All three default to `HEAD`. Set this in `/settings` if you want worktrees to branch from the remote default instead.
 
-**Sandbox network isolation**: On macOS and Linux, sandboxed commands cannot reach services running on your own machine, including a server the sandboxed command itself starts on `127.0.0.1`. This means test suites that bind a local port will fail inside the sandbox. Turn on **Allow local network** in `/sandbox` to restore access to localhost. On Linux, sandboxing also requires `slirp4netns`, `nsenter`, `iptables`, `ip6tables`, `iptables-restore`, and `ip6tables-restore` on `PATH` — install these if sandboxed commands start failing to launch. Additionally, Linux sandboxes restrict network egress to the configured HTTP(S) proxy when one is set; this proxy mode requires `slirp4netns`, `util-linux` 2.35+, `iptables`, and `/dev/net/tun` access.
+**Sandbox network access**: Sandboxed commands can reach localhost and private-network services by default, so test suites that bind a local port work inside the sandbox. The **Allow local network** option in `/sandbox` controls this. Use `/sandbox` to keep sandboxing enabled for just the current session without enabling it globally. On Linux, sandboxing also requires `slirp4netns`, `nsenter`, `iptables`, `ip6tables`, `iptables-restore`, and `ip6tables-restore` on `PATH` — install these if sandboxed commands start failing to launch. Additionally, Linux sandboxes restrict network egress to the configured HTTP(S) proxy when one is set; this proxy mode requires `slirp4netns`, `util-linux` 2.35+, `iptables`, and `/dev/net/tun` access.
 
 The `--attachment` flag (available in prompt mode, `-p`) lets you attach files — images or native documents — to the initial prompt in non-interactive mode:
 
@@ -945,9 +952,10 @@ This section collects settings and behaviors that **changed or were renamed** in
 - **`allowDevToolCaches` was renamed to `allowDevToolAccess`.** If your settings file still sets `allowDevToolCaches`, it is silently ignored — update it to `allowDevToolAccess`.
 - **Sandbox auth settings moved from `sandbox.gitAuth`/`sandbox.ghAuth` to `sandbox.auth.git`/`sandbox.auth.gh`.** There is no automatic migration; the old keys are silently ignored, and SDK requests that still send them are rejected as invalid.
 - **`worktreeBaseRef` now defaults to `HEAD` for all worktree-creation paths.** The `--worktree` startup flag previously defaulted to branching from the remote default branch instead.
-- **Sandbox network isolation on macOS/Linux blocks localhost by default.** Sandboxed commands — including a server the sandboxed command itself starts on `127.0.0.1` — can no longer reach services on your own machine. Turn on **Allow local network** in `/sandbox` if your test suite binds a local port. Linux sandboxing also requires `slirp4netns`, `nsenter`, `iptables`, `ip6tables`, `iptables-restore`, and `ip6tables-restore` on `PATH`.
+- **Sandbox local network access is now allowed by default (v1.0.100).** Earlier releases blocked localhost and private-network access on macOS/Linux unless you turned on **Allow local network** in `/sandbox`. Turn it off if you want the stricter isolation. Linux sandboxing also requires `slirp4netns`, `nsenter`, `iptables`, `ip6tables`, `iptables-restore`, and `ip6tables-restore` on `PATH`.
 - **`copilot plugins` lost its cross-kind flags.** The `--kind`, `--scope`, `--mcp`, and `--skill` flags were removed; `copilot plugins list` is now an alias of `copilot plugin list` and reports only plugins. Scripts using `copilot plugins install --skill [--scope project]` should switch to `copilot skill add [--project]`, and scripts reading `.plugins` from `copilot plugins list --json` should expect a flat array instead of the previous `{ plugins, errors }` object.
 - **Auto allow-all mode requires experimental mode.** The previous `AUTO_APPROVAL` environment variable approach was removed in favor of `/experimental on` (or `--experimental`) plus `/allow-all auto`.
+- **The built-in `browser` plugin was renamed `browser-use` (v1.0.100).** Existing browser plugin preferences continue to work after upgrading.
 - **Ctrl+D no longer queues messages.** It now uses its default terminal behavior; use **Ctrl+Q** or **Ctrl+Enter** to queue a message instead.
 - **The CLI's command-line parser was rewritten** (moving off Commander to a Rust-based grammar). As a result, some error and help wording changed, `copilot login --host` now works correctly, and `--max-autopilot-continues` no longer accepts scientific notation as a value.
 - **Model availability changes over time.** The model picker periodically retires older models; if a model you previously pinned in a custom agent or config disappears from `/model`, switch to a current model or a [family alias](#model-picker) instead.

@@ -857,6 +857,15 @@ copilot -p "Summarize the architecture shown in these diagrams" \
 
 This is useful in automated pipelines where you want to pass visual or document context (screenshots, design specs, PDF reports) to the model without interactive file selection. Multiple `--attachment` flags can be specified to include several files at once.
 
+**Prompt-mode trust and telemetry**: Use `--trust-folder` to trust the current folder for a one-off prompt-mode session (`-p` or piped stdin) without an interactive trust prompt. Use `--disable-client-telemetry` to turn off client telemetry uploads from the CLI:
+
+```bash
+copilot --trust-folder -p "Summarize this repository"
+copilot --disable-client-telemetry -p "Explain the build setup"
+```
+
+**`assistedApprovalInstructions` setting**: When using Assisted permissions, set this to give the approval judge natural-language guidance for deciding which confirmations to allow or escalate. Prompt-mode (`-p`) and piped runs also honor managed Auto model selection.
+
 The `COPILOT_HOME` environment variable sets the Copilot CLI configuration directory. It is the preferred replacement for the `--config-dir` flag, which is deprecated:
 
 ```bash

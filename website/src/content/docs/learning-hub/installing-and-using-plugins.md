@@ -197,6 +197,8 @@ Pinning to a SHA guarantees that everyone on the team installs plugins from exac
 
 ## Installing Plugins
 
+Plugin entries in a marketplace can also use a `git-subdir` source to point at a plugin that lives in a subdirectory of a Git repository, and plugin descriptions may be long. Verified skills and plugins can be installed from GitHub install links with `copilot plugin install "ghapp://air/install?..."`.
+
 ### From Copilot CLI
 
 Reference a plugin by name and marketplace:

@@ -340,13 +340,7 @@ You can connect to and steer a running coding agent session from a local Copilot
 
 ### Starting a Remote-Controlled Session
 
-Launch a session that registers with GitHub for remote access:
-
-```bash
-copilot --remote
-```
-
-Or open a remote control tab from inside an existing session, and check or toggle its state:
+From inside a Copilot CLI session, enable remote control and check or toggle its state:
 
 ```
 /remote             # show current remote control status
@@ -454,3 +448,7 @@ A: Yes. You can specify which agent to use when assigning work — the coding ag
 - **Browse Community Resources**: Explore the [Agents](../../agents/), [Skills](../../skills/), and [Plugins](../../plugins/) directories for ready-to-use resources
 
 ---
+
+## Compatibility and Migration Notes
+
+- **Retired `--remote` / `--no-remote` startup flags (v1.0.103)**: Copilot CLI replaced these legacy flags with clearer hosting and connection options. Run `copilot --help` to see the current flags, or use `/remote on` and `/remote off` inside a session.

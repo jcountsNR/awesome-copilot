@@ -3,7 +3,7 @@ title: "레슨 0 - 필수 조건"
 description: "Tailspin Toys 프로젝트에 필요한 Node.js를 설치하고 템플릿에서 리포지토리 복사본을 만들어 GitHub Copilot app 레슨을 준비합니다."
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-22
 ---
 
 GitHub Copilot app은 Copilot과 GitHub를 모두 사용하는 중앙 허브 역할을 하는 데스크톱 앱입니다. 이 앱에서 이슈와 끌어오기 요청에 빠르게 접근하고 GitHub Copilot을 사용해 빌드할 수 있습니다. 이 워크숍에서는 Astro로 구축된 Tailspin Toys 앱과 GitHub Copilot app을 모두 로컬에서 사용합니다. 시작하기 전에 Node.js가 로컬에 설치되어 있는지 확인한 다음 Copilot app을 설치합니다.

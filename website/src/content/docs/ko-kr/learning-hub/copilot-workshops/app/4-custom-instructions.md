@@ -3,7 +3,7 @@ title: "레슨 4 - 사용자 지정 지침으로 Copilot 안내"
 description: "리포지토리 지침을 살펴보고 문서화 표준을 추가한 다음 필터링 코드에 적용합니다."
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-22
 ---
 
 생성형 AI를 사용할 때는 컨텍스트가 중요합니다. 작업을 특정 방식으로 수행해야 한다면 Copilot이 해당 지침을 사용할 수 있어야 합니다. [지침 파일][instruction-files]은 원하는 코드의 *내용*뿐 아니라 코드의 *구조*도 설명합니다. 필터링을 구축했으므로 이제 Copilot이 사용한 지침을 살펴보고 문서화 표준을 추가한 다음 코드에 적용합니다.

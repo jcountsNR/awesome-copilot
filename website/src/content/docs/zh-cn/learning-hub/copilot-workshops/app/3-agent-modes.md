@@ -3,7 +3,7 @@ title: "第 3 课 - 智能体模式：Plan 和 Autopilot"
 description: "探索智能体模式：使用 Plan 确定方案，使用 Autopilot 根据议题构建筛选功能，再使用 Interactive 审查并验证结果。"
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-22
 ---
 
 我们先为项目添加了一项小功能，但更复杂的更改需要更完善的流程。GitHub Copilot app 支持组织现有的工作流程，帮助我们用正确的方法构建所需功能。从本课开始，你将通过几节课遵循典型的智能体驱动开发流程：先使用议题生成新功能，确认代码有效且功能行为符合预期，最终将更改成功合并到项目中。

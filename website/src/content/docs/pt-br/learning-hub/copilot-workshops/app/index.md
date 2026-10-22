@@ -2,7 +2,7 @@
 title: "Aplicativo GitHub Copilot"
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-22
 tags:
   - workshop
 ---

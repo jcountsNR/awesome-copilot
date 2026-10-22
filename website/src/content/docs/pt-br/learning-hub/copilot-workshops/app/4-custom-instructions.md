@@ -3,7 +3,7 @@ title: "Lição 4 - Orientar o Copilot com instruções personalizadas"
 description: "Explore as instruções do repositório, adicione um padrão de documentação e aplique-o ao código de filtragem."
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-22
 ---
 
 O contexto é fundamental ao trabalhar com IA generativa. Se uma tarefa precisar ser realizada de uma forma específica, essas orientações devem estar disponíveis para o Copilot. Os [arquivos de instruções][instruction-files] descrevem não apenas *qual* código você quer, mas também *como* ele deve ser estruturado. Agora que você criou a filtragem, explorará as instruções usadas pelo Copilot, adicionará um padrão de documentação e o aplicará ao código.

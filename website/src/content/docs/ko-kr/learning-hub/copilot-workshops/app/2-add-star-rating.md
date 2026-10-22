@@ -3,7 +3,7 @@ title: "레슨 2 - 별점 추가로 작은 성과 얻기"
 description: "GitHub Copilot app에서 첫 번째 에이전트 세션을 시작하고 게임 카드를 조금 변경한 다음 첫 번째 끌어오기 요청으로 병합합니다."
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-22
 ---
 
 이전 레슨에서는 워크스페이스를 살펴보고 빠른 채팅을 사용했습니다. 이제 **에이전트 세션**을 시작하고 프로젝트를 처음으로 변경합니다. 변경 범위는 작게 유지합니다. 게임 데이터에는 이미 별점이 있지만 홈페이지의 게임 카드에는 아직 표시되지 않습니다. 에이전트에게 별점을 표시하도록 요청하고, 변경 내용을 검토하고, 첫 번째 끌어오기 요청으로 병합합니다.
@@ -120,7 +120,7 @@ AI가 생성한 모든 변경 내용은 작더라도 병합하기 전에 검토�
 - [GitHub Copilot app 정보][about-copilot-app]
 - [GitHub Copilot app으로 이슈 및 끌어오기 요청 관리][managing-issues-prs]
 
-[prior-lesson]: /ko-kr/learning-hub/copilot-workshops/app/1-install-copilot-app/#github-copilot-app-%EC%84%A4%EC%B9%98-%EB%B0%8F-%EA%B5%AC%EC%84%B1
+[prior-lesson]: /ko-kr/learning-hub/copilot-workshops/app/1-install-copilot-app/#github-copilot-app-설치-및-구성
 [next-lesson]: /ko-kr/learning-hub/copilot-workshops/app/3-agent-modes/
 [agent-sessions]: https://docs.github.com/copilot/how-tos/github-copilot-app/agent-sessions
 [about-copilot-app]: https://docs.github.com/copilot/concepts/agents/github-copilot-app

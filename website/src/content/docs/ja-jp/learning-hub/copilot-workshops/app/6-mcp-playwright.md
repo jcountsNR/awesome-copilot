@@ -3,7 +3,7 @@ title: "レッスン 6 - Playwright MCP による機能の検証"
 description: "Customize から Playwright MCP を設定し、既存の機能用ワークツリーのフィルター機能をブラウザーで観察します。"
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-22
 ---
 
 すでに説明したように、コードを書く作業には、単にコードを書く以上のことが含まれます。データや外部サービスを操作し、Copilot で追加の自動化を利用できるようにする必要があります。そこで役立つのが MCP server です。MCP server を使うと、Copilot はアプリに組み込まれた機能を超えて、さらに多くのツールやサービスを利用できます。

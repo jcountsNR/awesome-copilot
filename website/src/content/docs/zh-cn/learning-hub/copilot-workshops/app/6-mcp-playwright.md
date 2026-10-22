@@ -3,7 +3,7 @@ title: "第 6 课 - 使用 Playwright MCP 验证功能"
 description: "通过 Customize 配置 Playwright MCP，在现有功能工作树中通过浏览器观察筛选功能。"
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-22
 ---
 
 如前所述，编写代码不只是写出代码。我们还需要处理数据和外部服务，甚至让 Copilot 能够使用更多自动化功能。这正是 MCP 服务器的用武之地。MCP 服务器让 Copilot 能够使用应用内置功能以外的更多工具和服务。

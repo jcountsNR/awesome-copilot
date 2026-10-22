@@ -3,7 +3,7 @@ title: "第 8 课 - 创建并合并功能 PR"
 description: "一并审查筛选功能、指令、技能更新、QA 配置文件和测试，然后创建 PR 并使用 Agent Merge。"
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-22
 ---
 
 筛选实现、指令更新、技能更新、质量保证 (QA) 配置文件和测试已保存在同一分支上。现在一并审查这些内容，并创建拉取请求。你已自行合并星级评分拉取请求 (PR)；这次将让 **Agent Merge** 管理该流程。

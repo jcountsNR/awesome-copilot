@@ -3,7 +3,7 @@ title: "第 4 课 - 使用自定义指令引导 Copilot"
 description: "探索存储库指令，添加文档标准，并将其应用于筛选代码。"
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-22
 ---
 
 使用生成式 AI 时，上下文至关重要。如果任务需要以特定方式完成，就应向 Copilot 提供相应指导。[指令文件][instruction-files]不仅说明需要什么代码，还说明代码应如何组织。现在筛选功能已构建完成，你将探索 Copilot 使用的指令、添加文档标准，并将其应用于代码。

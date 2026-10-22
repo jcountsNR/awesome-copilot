@@ -3,7 +3,7 @@ title: "레슨 6 - Playwright MCP로 기능 검증"
 description: "Customize에서 Playwright MCP를 구성하고 기존 기능 워크트리의 필터링을 브라우저에서 관찰합니다."
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-22
 ---
 
 앞서 강조했듯이 코드 작성에는 코드 자체를 작성하는 것보다 더 많은 작업이 필요합니다. 데이터와 외부 서비스를 사용하고 Copilot에 추가 자동화 기능을 제공해야 합니다. 이때 MCP 서버를 사용합니다. MCP 서버는 Copilot이 앱에 기본 제공된 기능을 넘어 더 많은 도구와 서비스를 사용하도록 합니다.

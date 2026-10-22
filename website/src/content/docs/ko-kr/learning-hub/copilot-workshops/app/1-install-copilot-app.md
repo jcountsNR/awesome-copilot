@@ -3,7 +3,7 @@ title: "레슨 1 - GitHub Copilot app 설치"
 description: "GitHub Copilot app을 설치하고, 템플릿에서 만든 리포지토리를 연결하고, 워크스페이스를 살펴보고, 빠른 채팅을 사용해 봅니다."
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-22
 ---
 
 [**GitHub Copilot app**][about-copilot-app]은 에이전트 기반 개발을 위한 데스크톱 애플리케이션입니다. GitHub Copilot CLI를 기반으로 하며 GitHub와 기본적으로 통합되어 리포지토리, 브랜치, CI 파이프라인을 바로 사용할 수 있습니다. 모든 작업을 직접 수행하고 반복 작업을 자동화하는 방식 대신, 각자 격리된 워크스페이스에서 여러 에이전트를 병렬로 지시하는 워크플로를 위해 설계되었습니다. Node.js를 설치하고 프로젝트 복사본을 준비했으므로 이제 앱을 설치하고 해당 리포지토리를 연결합니다.

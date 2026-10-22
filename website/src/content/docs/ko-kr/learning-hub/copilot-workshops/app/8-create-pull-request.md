@@ -3,7 +3,7 @@ title: "레슨 8 - 기능 PR 만들기 및 병합"
 description: "필터링, 스킬 업데이트, QA 프로필, 테스트를 함께 검토하고 PR을 만든 다음 Agent Merge를 사용합니다."
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-22
 ---
 
 필터링 구현, 지침 업데이트, 스킬 업데이트, 품질 보증(QA) 프로필, 테스트를 하나의 브랜치에 저장했습니다. 이제 함께 검토하고 끌어오기 요청을 엽니다. 별점 끌어오기 요청(PR)은 직접 병합했지만, 이번에는 **Agent Merge**가 프로세스를 관리하도록 합니다.

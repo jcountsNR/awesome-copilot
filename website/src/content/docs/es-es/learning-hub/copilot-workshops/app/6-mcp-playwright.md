@@ -3,7 +3,7 @@ title: "Lección 6 - Validar la funcionalidad con MCP de Playwright"
 description: "Configura MCP de Playwright mediante Customize y observa el filtrado en un navegador desde el worktree existente de la funcionalidad."
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-22
 ---
 
 Como ya hemos destacado, escribir código implica mucho más que limitarse a escribirlo. Necesitamos trabajar con datos y servicios externos e incluso permitir que Copilot disponga de automatizaciones adicionales. Aquí es donde entran en juego los servidores MCP. Estos permiten a Copilot ir más allá de lo que incorpora la aplicación y le proporcionan aún más herramientas y servicios.
